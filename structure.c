@@ -1,52 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//îĞÍÒ»
+//é¡å‹ä¸€
 struct people
 {
     char name[20];
     short age;
     char id[10];
     char sex;
-} pp1,pp2,pp3; //Èı‚€È«¾ÖµÄ½Y˜‹ów×ƒÁ¿£¬¿ÉÒÔ²»Òª
+} pp1,pp2,pp3; //ä¸‰å€‹å…¨å±€çš„çµæ§‹é«”è®Šé‡ï¼Œå¯ä»¥ä¸è¦
 
 
-//îĞÍ¶ş
+//é¡å‹äºŒ
 typedef struct student1
 {
     char name1[20];
     short age1;
     char id1[10];
     char sex1;
-} stu; //ß@ß…ÓÃµÄÊÇtypedef£¬ËùÒÔÊÇ°Ñß@‚€½Y˜‹ówÖØÃüÃûéstu£¬Ö®ááÊ¹ÓÃ•ş±Èİ^·½±ã
+} stu; //é€™é‚Šç”¨çš„æ˜¯typedefï¼Œæ‰€ä»¥æ˜¯æŠŠé€™å€‹çµæ§‹é«”é‡å‘½åç‚ºstuï¼Œä¹‹å¾Œä½¿ç”¨æœƒæ¯”è¼ƒæ–¹ä¾¿
 
 
-//½Y˜‹ów¡¢Ö¸á˜µÈ¶¼¿ÉÒÔ×÷éÁíÒ»‚€½Y˜‹ówµÄ×ƒÁ¿
+//çµæ§‹é«”ã€æŒ‡é‡ç­‰éƒ½å¯ä»¥ä½œç‚ºå¦ä¸€å€‹çµæ§‹é«”çš„è®Šé‡
 struct student
 {
     char class1;
-    struct people s;   //½Y˜‹ów
-    int *point;        //Ö¸á˜
+    struct people s;   //çµæ§‹é«”
+    int *point;        //æŒ‡é‡
 
 };
 
-void print1(struct student tmp);  //°ÑÕû‚€½Y˜‹ów‚÷ß^È¥
-void print2(struct student *tmp);  //°ÑÖ¸á˜‚÷ß^È¥£¨ß@·N•ş±Èİ^ºÃ£¬ÒòéÖ»ÊÇ‚÷Ò»‚€Ö¸á˜£¬ß\ËãÁ¿ºÜĞ¡£©
+void print1(struct student tmp);  //æŠŠæ•´å€‹çµæ§‹é«”å‚³éå»
+void print2(struct student *tmp);  //æŠŠæŒ‡é‡å‚³éå»ï¼ˆé€™ç¨®æœƒæ¯”è¼ƒå¥½ï¼Œå› ç‚ºåªæ˜¯å‚³ä¸€å€‹æŒ‡é‡ï¼Œé‹ç®—é‡å¾ˆå°ï¼‰
 
 int main()
 {
-//îĞÍÒ»µÄ½Y˜‹ówÊ¹ÓÃ
-    struct people p1;  //¾Ö²¿½Y˜‹ów×ƒÁ¿
+//é¡å‹ä¸€çš„çµæ§‹é«”ä½¿ç”¨
+    struct people p1;  //å±€éƒ¨çµæ§‹é«”è®Šé‡
 
 
-//îĞÍ¶şµÄ½Y˜‹ówÊ¹ÓÃ
-    stu p2;   //ÔÚĞû¸æ•r±Èİ^º†
+//é¡å‹äºŒçš„çµæ§‹é«”ä½¿ç”¨
+    stu p2;   //åœ¨å®£å‘Šæ™‚æ¯”è¼ƒç°¡æ½”
 
-    char address[] = { "Ë¼Ô´½Ö13-2Ì–1232ÊÒ" };
+    char address[] = { "æ€æºè¡—13-2è™Ÿ1232å®¤" };
     struct student s1 = {"A",{"Wang",23,"R10222087",'M'},address};
 /*
     printf("id : %s\n",s1.s.id);
-    printf("address : %s\n",s1.point);  //²»ÖªµÀéÊ²üNß@ß…ÄÖ¸á˜ÑeÃæÈ¡Öµ²»ÓÃ¼Ó*
+    printf("address : %s\n",s1.point);  //ä¸çŸ¥é“ç‚ºä»€éº¼é€™é‚Šå¾æŒ‡é‡è£¡é¢å–å€¼ä¸ç”¨åŠ *
     printf("name : %s\n",s1.s.name);
 */
 
